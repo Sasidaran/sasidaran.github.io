@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="verify-v1" content="91yIG+EaOdwKuPX+R9ChHEWVXJ6wdQsq0gqD1c1sbaY="/>
+    <title>Sasidaran S, Resume- Web Developer</title>
+    <style type="text/css">
+      body {
+        color: #000000;
+        font-family: Geneva, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.5em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      header > h1 {
+        text-align: center;
+        position: relative;
+        float: right;
+        margin-right: 300px;
+      }
+
+      #resumecontainer {
+        background-color: #f6f6f6;
+        margin: 20px auto;
+        max-width: 600px;
+        min-width: 300px;
+        padding: 20px;
+        position: relative;
+        text-align: left;
+        border-radius: 5px;
+      }
+
+      /* entire container, keeps perspective */
+      .flip-container {
+        perspective: 1000;
+        transform: perspective(1000px);
+        -webkit-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+
+      /*  UPDATED! flip the pane when hovered */
+      .flip-container.flip .back {
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+      .flip-container.flip .front {
+        -webkit-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+
+      .flip-container, .front, .back {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+      }
+
+      /* flip speed goes here */
+      .flipper {
+        transition: 0.6s;
+        transform: perspective(1000px);
+        -webkit-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: relative;
+      }
+
+      /* hide back of pane during swap */
+      .front, .back {
+        -webkit-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      /*  UPDATED! front pane, placed above back */
+      .front {
+        z-index: 2;
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+
+      /* back, initially hidden pane */
+      .back {
+        -webkit-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        margin-top: 50px;
+      }
+
+      /*
+        Some vertical flip updates
+      */
+      .vertical.flip-container {
+        position: relative;
+      }
+
+      .vertical .back {
+        -webkit-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+
+      .vertical.flip-container:hover .back {
+        -webkit-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+
+      .vertical.flip-container:hover .front {
+        -webkit-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+    </style>
+    <script type="text/javascript">
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="links">
+
+    </div>
+
+    <div id="resumecontainer">
+
+    <header>
+      <h1>S Sasidaran</h1>
+    </header>
+
+    <div class="flip-container vertical" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front" style='background: url(https://assets.knome.ultimatix.net/system/users/avatars/000/054/507/large/43f6a80007cc75407ca62e1032aada2f512b2745.png) 0 0 no-repeat;'>
+        </div>
+        <div class="back">
+          <em><a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a></em>
+          <em> Ruby on Rails Developer </em>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
