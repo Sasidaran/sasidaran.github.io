@@ -162,16 +162,29 @@ body {
   color: white;
   font-weight:bold;
 }
-li:before
+ul.skills > li:before
 {
-    content: '✔';   
-    margin-left: -1em;
-    margin-right: .100em;
+  content: '✔';   
+  margin-left: -1em;
+  margin-right: .100em;
 }
-ul
-{
-   padding-left: 20px;
-   text-indent: 2px;
-   list-style: none;
-   list-style-position: outside;
+ul.skills {
+  padding-left: 20px;
+  text-indent: 2px;
+  list-style: none;
+  list-style-position: outside;
 }
+.socialIconBig {
+  padding-left: 20px;
+}
+.socialIconBig li {
+  display: inline-block;
+}
+.socialIconBig img {
+  height: 25px;
+  width: 25px;
+}
+.hList {
+  margin-bottom: 5px;
+}
+h1 .socialIconBig { display: inline-block; }
