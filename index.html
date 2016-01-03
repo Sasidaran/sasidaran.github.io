@@ -7,14 +7,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="public/318446.ico"/>
     <style type="text/css">
       body {
-        color: #000000;
-        font-family: Geneva, Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 1.5em;
+        font-family: "Times New Roman", Georgia, Serif;
         margin: 0;
         padding: 0;
-        text-align: center;
       }
 
       /* entire container, keeps perspective */
@@ -148,16 +143,45 @@
         min-height: 50%;
       }
       .sidebar-content{
-        background: #81DAF5;
-        height: 95vh;
-        background: -webkit-linear-gradient(left top, #81DAF5, #A9E2F3); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #81DAF5, #A9E2F3); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #81DAF5, #A9E2F3); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, #81DAF5, #A9E2F3); /* Standard syntax */
       }
       .main-content {
         background: white;
-        height: 95vh;
+      }
+      .container {
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size: 15px;
+      }
+      .main-heading {
+        font-size: 30px;
+      }
+      .highlights {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .inner-heading {
+        font-size: 20px;
+      }
+      .text-color {
+        font-weight: bold;
+        color: white;
+      }
+      .text-color a {
+        background-color: #d11250;
+        color: white;
+        font-weight:bold;
+      }
+      li:before
+      {
+          content: '✔';   
+          margin-left: -1em;
+          margin-right: .100em;
+      }
+      ul
+      {
+         padding-left: 20px;
+         text-indent: 2px;
+         list-style: none;
+         list-style-position: outside;
       }
     </style>
     <script type="text/javascript">
@@ -176,23 +200,122 @@
     <div id="resumecontainer" class="container">
 
       <div class='row row1'>
-        <div class='col-sm-3'>
-          <div class='sidebar-content text-center'>
+        <div class='col-sm-2'>
+          <div class='sidebar-content bs-docs-sidebar span2 affix-top' data-offset-top="50" data-spy="affix">
             <div class="flip-container vertical" ontouchstart="this.classList.toggle('hover');">
               <div class="flipper">
                 <div class="front" style='background-image: url(https://s.gravatar.com/avatar/f16b71baaad2a57e4195336eae2b4c49?s=130); background-repeat: no-repeat; background-position: center; '>
                 </div>
                 <div class="back">
-                  <em><a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a></em>
-                  <em> Ruby on Rails Developer </em>
+                  <em class='text-color'><a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a></em>
+                  <em class='text-color'> Ruby on Rails Developer </em>
                 </div>
               </div>
+            </div>
+            <div class='well well-small' style='margin-top: 20px;'>
+              <ul class='list-unstyled'><span class='highlights'><em>Skills</em></span>
+                <li> Ruby on Rails </li>
+                <li> Jquery, Javascript, Coffescript, Angular js </li>
+                <li> Postgres, MySQL, Oracle </li>
+                <li> Sunspost Solr, Redis, Memcached </li>
+                <li> GIT, CVS, SVN </li>
+                <li> AWS, RHEL, Ubuntu servers </li>
+                <li> Sublime, Aptana editors </li>
+              </ul>
+            </div>
+            <div class='well well-small'>
+              <span class='highlights'><em>Contact</em></span>
+              <p>Ph: +91 9994274156</p>
+              <p>Mo: +352 691956229</p>
             </div>
           </div>
         </div>
 
-        <div class='col-sm-9 custom main-content' id="content">
-          <h1>S Sasidaran</h1>
+        <div class='col-sm-10 custom main-content' id="content">
+          <h1 class='main-heading'><em>S.Sasidaran</em></h1>
+          <div class='profile'>
+            <span class='highlights'><em>Profile</em></span>
+            <p>
+              7 yrs of Experience in software development life cycle (SDLC) experience including requirement
+              gathering, analysis, design, development, testing and Creation of Linux Server environment for
+              application. I am working on Ruby on Rails (RoR) to develop an Enterprise 2.0 collaborating platform
+              for internal TCS. The platform deals with the concept of “Applying Web2.0 concepts and Social
+              Networking” within the enterprise
+            </p>
+          </div>
+          <div class='experience'>
+            <span class='highlights'><em>Experience</em></span>
+            <p class='inner-heading'>
+              <em>Tata Consultancy Services || Assitant consultant (25 th March 2009 -Till Date)</em>
+            </p>
+          </div>
+          <div class='projects'>
+            <span class='highlights'><em>Projects</em></span>
+            <p class='inner-heading'>
+              SAM3 (Sep 2015 - Till Date)
+            </p>
+            <p>
+              <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
+              <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator </em></span>
+              <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Orcale, CVS & SVN</em></span>
+              <div>
+                This project is to develop an application where the employees can request access for creation of profile, .. 
+              </div>
+            </p>
+            <p class='inner-heading'>
+              Knome (Nov 2012 - Sep 2015)
+            </p>
+            <p>
+              <span><strong>Role:</strong> Senior Developer <em></em></span>
+              <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
+              <div>
+                This project is to develop an application where the employees can use the social networking concepts within the enterprise. Knome is a resposive app which can be viewed in any devises like mobile, iPAD and desktops. Many key social elements are added this platform.
+              </div>
+            </p>
+            <p class='inner-heading'>
+              Elpatio (Feb 2013 - Dec 2013)
+            </p>
+            <p>
+              <span><strong>Customer:</strong> <em>ING Bank, Spain</em></span>
+              <span><strong>Role:</strong> Developer <em></em></span>
+              <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
+              <div>
+                Knome platformm solution was customized for ING bank specific requirements and helped in customzing the solution. 
+              </div>
+            </p>
+            <p class='inner-heading'>
+              MIX (Feb 2013 - May 2013)
+            </p>
+            <p>
+              <span><strong>Customer:</strong> <em>WESTPAC bank, Australia</em></span>
+              <span><strong>Role:</strong> Developer + Onsite co-ordinator <em></em></span>
+              <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma, AWS</em></span>
+              <div>
+                Knome platformm solution was customized for Westpac bank specific requirements and helped in customzing the solution. 
+              </div>
+            </p>
+            <p class='inner-heading'>
+              Ideamax (Mar 2010 - Nov 2012)
+            </p>
+            <p>
+              <span><strong>Role:</strong> Developer + Server Administrator Lead <em></em></span>
+              <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, Mysql, Passenger, Apache, AWS</em></span>
+              <div>
+                Ideamax is innovation and collaboration hub for TCS where employees could network, collaborate, share and implement innovative ideas swiftly. It facilitates comprehensive lifecycle
+              </div>
+            </p>
+            <p class='inner-heading'>
+              Tata Innoverse (Oct 2009 - Mar 2010)
+            </p>
+            <p>
+              <span><strong>Customer:</strong> <em>Tata Quality Management System</em></span>
+              <span><strong>Role:</strong> Developer <em></em></span>
+              <span><strong>Tech Spec:</strong> <em>Ruby on Rails, Mysql, Passenger, Apache, AWS</em></span>
+              <div>
+                'Tata Innoverse' is the innovation hub for all Tata companies where employees can network, collaborate, share, remix, predict and implement innovative ideas swiftly.
+              </div>
+            </p>
+          </div>
         </div>
       </div>
     </div>
