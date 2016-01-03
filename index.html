@@ -17,24 +17,6 @@
         text-align: center;
       }
 
-      header > h1 {
-        text-align: center;
-        position: relative;
-        float: right;
-        margin-right: 300px;
-      }
-
-      #resumecontainer {
-        background-color: #f6f6f6;
-        margin: 20px auto;
-        max-width: 600px;
-        min-width: 300px;
-        padding: 20px;
-        position: relative;
-        text-align: left;
-        border-radius: 5px;
-      }
-
       /* entire container, keeps perspective */
       .flip-container {
         perspective: 1000;
@@ -63,8 +45,8 @@
       }
 
       .flip-container, .front, .back {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         border-radius: 100px;
       }
 
@@ -148,31 +130,69 @@
         -moz-transform: rotateX(180deg);
         transform: rotateX(180deg);
       }
+      #bg {
+        position: fixed; 
+        top: -50%; 
+        left: -50%; 
+        width: 200%; 
+        height: 200%;
+      }
+      #bg img {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        margin: auto; 
+        min-width: 50%;
+        min-height: 50%;
+      }
+      .sidebar-content{
+        background: #81DAF5;
+        height: 95vh;
+        background: -webkit-linear-gradient(left top, #81DAF5, #A9E2F3); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #81DAF5, #A9E2F3); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #81DAF5, #A9E2F3); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right, #81DAF5, #A9E2F3); /* Standard syntax */
+      }
+      .main-content {
+        background: white;
+        height: 95vh;
+      }
     </style>
     <script type="text/javascript">
     </script>
-    <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div id="links">
-
+    <div id="bg">
+      <img src="public/images/bg.jpg" alt="">
     </div>
 
-    <div id="resumecontainer">
+    <div id="resumecontainer" class="container">
 
-    <header>
-      <h1>S Sasidaran</h1>
-    </header>
-
-    <div class="flip-container vertical" ontouchstart="this.classList.toggle('hover');">
-      <div class="flipper">
-        <div class="front" style='background: url(https://assets.knome.ultimatix.net/system/users/avatars/000/054/507/large/43f6a80007cc75407ca62e1032aada2f512b2745.png) 0 0 no-repeat;'>
+      <div class='row row1'>
+        <div class='col-sm-3'>
+          <div class='sidebar-content text-center'>
+            <div class="flip-container vertical" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front" style='background-image: url(https://s.gravatar.com/avatar/f16b71baaad2a57e4195336eae2b4c49?s=130); background-repeat: no-repeat; background-position: center; '>
+                </div>
+                <div class="back">
+                  <em><a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a></em>
+                  <em> Ruby on Rails Developer </em>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="back">
-          <em><a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a></em>
-          <em> Ruby on Rails Developer </em>
+
+        <div class='col-sm-9 custom main-content' id="content">
+          <h1>S Sasidaran</h1>
         </div>
       </div>
     </div>
