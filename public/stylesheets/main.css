@@ -2,6 +2,7 @@ body {
   font-family: "Times New Roman", Georgia, Serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 
 /* entire container, keeps perspective */
@@ -94,6 +95,16 @@ body {
   position: relative;
 }
 
+.skill_container {
+  margin-top: 20px;
+  width: 175px;
+  height: auto;
+}
+
+.contact_container {
+  width: 175px;
+}
+
 .vertical .back {
   -webkit-transform: rotateX(180deg);
   -o-transform: rotateX(180deg);
@@ -124,16 +135,7 @@ body {
   width: 200%; 
   height: 200%;
 }
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}
+
 .sidebar-content{
 }
 .main-content {
