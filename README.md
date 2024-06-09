@@ -1,5 +1,3 @@
-![example branch parameter.](https://github.com/Sasidaran/sasidaran.github.io/blob/master/.github/workflows/jekyll-docker.yml/badge.svg?branch=main)
-
 [![Basic validation]([https://github.com/actions/stale/actions/workflows/basic-validation.yml/badge.svg?branch=main)](https://github.com/Sasidaran/sasidaran.github.io/blob/master/.github/workflows/jekyll-docker.yml)
 
 <h1 align="center">Hi 👋, I'm Sasidaran</h1>
