@@ -1,3 +1,4 @@
+![example branch parameter.](https://github.com/mona/special-octo-eureka/actions/workflows/grading.yml/badge.svg?branch=my-workflow)
 <h1 align="center">Hi 👋, I'm Sasidaran</h1>
 <h3 align="center">A passionate backend developer</h3>
 
