@@ -1,4 +1,4 @@
-![example branch parameter.](https://github.com/Sasidaran/sasidaran.github.io/blob/master/.github/workflows/jekyll-docker.yml/badge.svg?branch=my-workflow)
+![example branch parameter.](https://github.com/Sasidaran/sasidaran.github.io/blob/master/.github/workflows/jekyll-docker.yml/badge.svg?branch=main)
 <h1 align="center">Hi 👋, I'm Sasidaran</h1>
 <h3 align="center">A passionate backend developer</h3>
 
