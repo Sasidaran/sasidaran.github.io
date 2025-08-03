@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      ul.list-unstyled.skills {
+      display: flex; /* Makes the ul a flex container */
+      flex-wrap: wrap; /* Allows items to wrap to the next line */
+      gap: 10px; /* Adds space between flex items */
+      /* Other properties to consider:
+         flex-direction: row; (default, arranges items in a row)
+         justify-content: center; (aligns items along the main axis)
+         align-items: center; (aligns items along the cross axis)
+      */
+    }
+
+    ul.list-unstyled.skills li {
+      /* Optional: adjust individual list item styling */
+      list-style: none; /* Removes bullet points */
+      /* Add padding, border, background, etc. */
+    }
+    
+    </style>
   </head>
   <body>
     <div id="bg">
