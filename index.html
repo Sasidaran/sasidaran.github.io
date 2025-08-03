@@ -28,6 +28,64 @@
       list-style: none; /* Removes bullet points */
       /* Add padding, border, background, etc. */
     }
+
+      /* Add space below main sections */
+      .profile, .experience, .education, .projects, .skill_container {
+        margin-bottom: 30px; /* Increase space between sections */
+      }
+      
+      /* Add space below headings within sections */
+      .inner-heading {
+        margin-top: 20px; /* Add space above inner headings */
+        margin-bottom: 10px; /* Add space below inner headings */
+      }
+      
+      /* Improve spacing for list items (like in skills) */
+      ul.list-unstyled li {
+        margin-bottom: 5px; /* Add space below list items */
+      }
+      
+      /* Consider using a more modern font. You can import one from Google Fonts */
+      body {
+        font-family: 'Arial', sans-serif; /* Replace with a modern font like 'Roboto', 'Open Sans', etc. */
+        line-height: 1.6; /* Improve readability */
+      }
+        
+        #bg {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1; /* Ensure it's behind the content */
+          /* Example: Add a subtle background color or gradient */
+          background-color: #f4f4f4; /* Light grey background */
+          /* Or a gradient: */
+          /* background: linear-gradient to bottom, #f4f4f4, #e0e0e0); */
+          /* Or a background image: */
+          /* background-image: url('your-background-image.jpg');
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat; */
+        }
+
+      
+      /* Adjust heading font sizes and weights */
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: normal; /* Or choose a specific weight */
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      
+      /* Style the highlight spans */
+      .highlights {
+        display: block; /* Make it a block element to control spacing */
+        margin-bottom: 10px; /* Add space below the highlight */
+        font-weight: bold; /* Make highlights stand out */
+        /* Add color or border bottom for visual emphasis */
+        color: #333; /* Example color */
+      }
+
     
     </style>
   </head>
