@@ -142,8 +142,8 @@
             background: #e67e22;
         }
 
-        /* Project Details */
-        .projects p {
+        /* Project/Experience Details */
+        .experience .job-entry {
             background: rgba(255, 255, 255, 0.05);
             padding: 20px;
             border-radius: 8px;
@@ -151,16 +151,25 @@
             border-left: 3px solid #2ecc71;
         }
 
-        .projects p span {
-            display: inline-block;
-            margin-right: 25px;
-            font-weight: bold;
-            color: #bdc3c7;
+        .job-entry h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #e67e22;
+            margin-top: 0;
+            margin-bottom: 5px;
         }
-        .projects p div {
-            margin-top: 15px;
+
+        .job-entry .job-details {
+            font-size: 0.9em;
+            color: #bdc3c7;
+            margin-bottom: 15px;
+        }
+
+        .job-entry .skills-list {
+            font-size: 0.9em;
             font-style: italic;
             color: #aaa;
+            margin-top: 15px;
         }
 
         /* Table */
@@ -262,19 +271,56 @@
                 <div class="profile">
                     <span class="highlights"><em>Profile</em></span>
                     <p>
-                        15+ yrs of Experience in software development life cycle (SDLC) experience including requirement
-                        gathering, analysis, design, development, testing and Creation of Linux Server environment for
-                        application. I am working on Ruby on Rails (RoR) to develop an Enterprise 2.0 collaborating platform
-                        for internal TCS. The platform deals with the concept of “Applying Web2.0 concepts and Social
-                        Networking” within the enterprise.
+                        At Tata Consultancy Services, my role as a **Lead Data Engineer** has involved the critical modernization of ING Australia’s data warehouse, transforming it into a decentralized Data Lake utilizing **Azure Synapse Analytics** and **Databricks**. This modernization has streamlined data management processes and significantly enhanced analytical capabilities, thereby supporting the client’s strategic objectives.
+                        <br><br>
+                        In my preceding position as a **Technical Architect**, I exhibited my expertise in designing robust full-stack API solutions and supervising **DevOps** processes. My focus on containerization and orchestration using **ECS**, **EKS**, and **AKS**, along with infrastructure management employing **Terraform** and **Ansible**, has enabled our team to deliver scalable enterprise applications that have reinforced the client’s technology ecosystem.
                     </p>
                 </div>
 
                 <div class="experience">
                     <span class="highlights"><em>Experience</em></span>
-                    <p class="inner-heading">
-                        <em>Tata Consultancy Services || Assistant consultant (25th March 2009 -Till Date)</em>
-                    </p>
+                    
+                    <div class="job-entry">
+                        <h4>Lead Data Engineer <span style="float: right; font-size: 0.8em; font-weight: normal; color: #aaa;">1 yr 5 mos</span></h4>
+                        <div class="job-details">Tata Consultancy Services | Full-Time | Sydney, New South Wales, Australia | On-site</div>
+                        <p>My role as a Lead Data Engineer has involved the critical modernization of ING Australia’s data warehouse, transforming it into a decentralized Data Lake utilizing Azure Synapse Analytics and Databricks (PySpark). This modernization has streamlined data management processes and significantly enhanced analytical capabilities, thereby supporting the client’s strategic objectives.</p>
+                        <div class="skills-list">Skills: Kafka · Function apps · Pyspark · Python · DevOps · Event hub · Banking · Powershell · Azure Data Factory</div>
+                    </div>
+
+                    <div class="job-entry">
+                        <h4>Associate Consultant | Lead Data Engineer <span style="float: right; font-size: 0.8em; font-weight: normal; color: #aaa;">1 yr 11 mos</span></h4>
+                        <div class="job-details">Tata Consultancy Services | On-site</div>
+                        <p>I was actively engaged in modernizing the legacy on-premises data warehouse solution, transitioning it to a decentralized Data Lake architecture. This transformation leverages Azure Synapse Analytics and Databricks to establish a cloud-native Big Data ecosystem. My duties included the development of automation workflows, the implementation of DevOps pipelines to streamline operations, and orchestrating the data ingestion, processing, and consumption using Azure Functions.</p>
+                        <div class="skills-list">Skills: Azure Data Lake · Kafka · Function apps · Pyspark · Python · ServiceNow · Azure DevOps · SQL server · Teradata · Python · Jira · Agile methodologies · Postgresql · Solr · Code Refactoring · Synapse · Azure Databricks · Resolving Issues · Azure Data Factory · Microsoft Azure</div>
+                    </div>
+
+                    <div class="job-entry">
+                        <h4>Associate Consultant | Technical Architect - Full Stack API and DevOps Lead <span style="float: right; font-size: 0.8em; font-weight: normal; color: #aaa;">2 yrs 6 mos</span></h4>
+                        <div class="job-details">Tata Consultancy Services | On-site | Client: Credit Suisse Bank</div>
+                        <p>My expertise in designing and deployment of robust enterprise applications within cloud environments such as AWS and Azure. My expertise includes using Elastic Container Service (ECS) and Elastic Kubernetes Service (EKS) to build scalable microservices and Azure, specifically on Azure, leveraging the capabilities of Docker and Kubernetes for containerization and orchestration. For infrastructure management, I utilized modern tools like Terraform for infrastructure as code and Ansible for configuration management. This proficiency has been pivotal in creating a streamlined development pipeline, ensuring scalability and efficiency in operations.</p>
+                        <div class="skills-list">Skills: Ruby on Rails · Microservices · Object-oriented applications · APIs · Postgresql · Red Hat Linux · Golang · Ansible · Go · Amazon Web Services (AWS) · Cloud Computing · ACR · ServiceNow · Requirements Analysis · Cyberark · Code Refactoring · Pyspark · Kubernetes · Git · Azure DevOps · Jira · Agile methodologies · Docker · Amazon ECS · Amazon EC2 · Resolving Issues · Azure Data Factory · Palo Alto Networks Prisma · API Development</div>
+                    </div>
+
+                    <div class="job-entry">
+                        <h4>Associate Consultant | Technical Architect- AWS, DevOps, Fullstack API <span style="float: right; font-size: 0.8em; font-weight: normal; color: #aaa;">1 yr 3 mos</span></h4>
+                        <div class="job-details">Tata Consultancy Services | On-site</div>
+                        <p>Successfully deployed web and API-based applications within an Azure containerized AKS (Azure Kubernetes Service) cluster. This involved close collaboration with multiple teams to ensure a seamless and effective deployment process. In addition, I fully automated the deployment of containerized applications by leveraging a Jenkins pipeline, integrating it with Git and Azure Container Registry. This automation process was further enhanced with Docker, Kubernetes, and Jfrog for effective container management and CI/CD practices.</p>
+                        <div class="skills-list">Skills: Ruby on Rails · Microservices · AWS · API Development · Postgresql · ServiceNow · Requirements Analysis · Terraform · Linux · Kubernetes · Amazon EKS · Docker · Amazon ECS · Git · Amazon EC2 · Resolving Issues · Palo Alto Networks Prisma</div>
+                    </div>
+
+                    <div class="job-entry">
+                        <h4>Associate Consultant | Project Manager, Ruby on Rails Development <span style="float: right; font-size: 0.8em; font-weight: normal; color: #aaa;">2 yrs 6 mos</span></h4>
+                        <div class="job-details">Tata Consultancy Services | On-site</div>
+                        <p>Summary: Replacement of the tools created by the business teams (Excel) with robust applications written in Ruby on Rails. A dashboard was set up to track projects and tasks, as well as analyze trends.</p>
+                        <div class="skills-list">Skills: Oracle · Agile methodologies · Red Hat Linux · Cloud Computing · ServiceNow · Requirements Analysis · Postgresql · Code Refactoring · Ruby on Rails · Git · Amazon EC2 · API Development</div>
+                    </div>
+
+                    <div class="job-entry">
+                        <h4>Assistant Consultant | Senior Technical Architect | Royal Bank of Canada <span style="float: right; font-size: 0.8em; font-weight: normal; color: #aaa;">1 yr 5 mos</span></h4>
+                        <div class="job-details">Tata Consultancy Services | On-site | Client: Royal Bank of Canada</div>
+                        <p>Onsite lead and managed a 14-member offshore development team. Handled requirements, designs, and test cases. Provided features and built multiple application functionalities requested by the client and provided support solutions.</p>
+                        <div class="skills-list">Skills: Oracle · Agile Methodologies · ServiceNow · PostgreSQL · Code Refactoring · Ruby on Rails · Git · Amazon EC2 · API Development</div>
+                    </div>
                 </div>
 
                 <div class="education">
@@ -313,70 +359,6 @@
                     </div>
                 </div>
 
-                <div class="projects">
-                    <span class="highlights"><em>Projects</em></span>
-                    <p class="inner-heading">FIRECALL (April 2016 - July 2016)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
-                        <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator</em></span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Oracle, CVS & SVN</em></span>
-                        <div>This application was built to grant access to various production db vendors like (ORACLE, SQL server, Focus - Mainframe, SYBASE and Progress based applications)</div>
-                    </p>
-                    <p class="inner-heading">SAM3 (Sep 2015 - Till Date)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
-                        <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator</em></span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Oracle, CVS & SVN</em></span>
-                        <div>This project is to develop an application where the employees can raise request to gain access to specific softwares / applications</div>
-                    </p>
-                    <p class="inner-heading">Migration of RBC Rails application to Latest version (Sep 2015 - Till Date)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
-                        <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator</em></span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Oracle, CVS & SVN</em></span>
-                        <div>This project is to migrate all rails application which are being developed in Rails 1, 2 and 3 to Latest version. Developed a Rails 4 template application, with the help of this application migrated all the okd version application.</div>
-                    </p>
-                    <p class="inner-heading">Knome (Nov 2012 - Sep 2015)</p>
-                    <p>
-                        <span><strong>Role:</strong> Senior Developer</span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
-                        <div>This project is to develop an application where the employees can use the social networking concepts within the enterprise. Knome is a resposive app which can be viewed in any devises like mobile, iPAD and desktops. Many key social elements are added this platform.</div>
-                    </p>
-                    <p class="inner-heading">Bay (Feb 2015 - Apr 2015)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>SIAM Bank, Thailand</em></span>
-                        <span><strong>Role:</strong> Senior Developer</span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
-                        <div>Knome platform solution was customized for SIAM bank specific requirements and helped in customzing the solution and deployed the application in AWS. Did the full AWS configuration.</div>
-                    </p>
-                    <p class="inner-heading">Elpatio (Feb 2013 - Dec 2013)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>ING Bank, Spain</em></span>
-                        <span><strong>Role:</strong> Developer</span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
-                        <div>Knome platformm solution was customized for ING bank specific requirements and helped in customzing the solution.</div>
-                    </p>
-                    <p class="inner-heading">MIX (Feb 2013 - May 2013)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>WESTPAC bank, Australia</em></span>
-                        <span><strong>Role:</strong> Developer + Onsite co-ordinator</span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma, AWS</em></span>
-                        <div>Knome platformm solution was customized for Westpac bank specific requirements and helped in customzing the solution. Was maintaining the application deployed in AWS.</div>
-                    </p>
-                    <p class="inner-heading">Ideamax (Mar 2010 - Nov 2012)</p>
-                    <p>
-                        <span><strong>Role:</strong> Developer + Server Administrator Lead</span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, Mysql, Passenger, Apache, AWS</em></span>
-                        <div>Ideamax is innovation and collaboration hub for TCS where employees could network, collaborate, share and implement innovative ideas swiftly. It facilitates comprehensive lifecycle</div>
-                    </p>
-                    <p class="inner-heading">Tata Innoverse (Oct 2009 - Mar 2010)</p>
-                    <p>
-                        <span><strong>Customer:</strong> <em>Tata Quality Management System</em></span>
-                        <span><strong>Role:</strong> Developer</span>
-                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, Mysql, Passenger, Apache, AWS</em></span>
-                        <div>'Tata Innoverse' is the innovation hub for all Tata companies where employees can network, collaborate, share, remix, predict and implement innovative ideas swiftly.</div>
-                    </p>
-                </div>
             </div>
         </div>
     </div>
