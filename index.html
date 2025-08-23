@@ -2,211 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Sasidaran Sudhakaran, Resume - Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sasidaran Sudhakaran, Resume</title>
     <link rel="shortcut icon" type="image/x-icon" href="public/images/318446.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <style>
         /* General Body and Layout */
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa; /* Light grey background */
-            color: #333;
+            font-family: 'Roboto Slab', serif;
+            line-height: 1.7;
+            background: #111;
+            color: #f1f1f1;
+            padding: 40px 0;
         }
 
-        /* Container and Spacing */
+        /* Resume Container */
         #resumecontainer {
-            margin-top: 50px;
-            margin-bottom: 50px;
-            background-color: #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            border-radius: 8px;
+            background: #1e1e1e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .row1 {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        /* Sidebar and Contact Info */
-        .sidebar-content {
-            padding: 20px;
-            border-right: 1px solid #eee;
-            margin-bottom: 20px;
-        }
-
-        .contact_container p {
-            margin-bottom: 5px;
-        }
-
-        .main-content {
-            padding: 0 30px;
-        }
-        
-        /* Heading Styles */
+        /* Headers and Highlights */
         .main-heading {
-            font-weight: 300;
-            font-size: 3em;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-
-        .inner-heading {
-            font-weight: 600;
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 25px;
-            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3.5em;
+            color: #e67e22; /* A warm, standout color */
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .highlights {
             display: block;
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #3498db;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5em;
+            color: #2ecc71; /* A contrasting, cool color */
             text-transform: uppercase;
             letter-spacing: 1px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
-        /* Section Spacing */
-        .profile, .experience, .education, .projects, .skill_container {
-            margin-bottom: 40px;
+        .inner-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.3em;
+            color: #bdc3c7;
+            margin-top: 25px;
+            margin-bottom: 10px;
         }
 
-        /* List and Text Styles */
-        ul.list-unstyled li {
-            margin-bottom: 5px;
+        /* Sidebar and Flip Photo */
+        .sidebar {
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        p {
-            margin-bottom: 15px;
-        }
-
-        /* Flip Card for Profile Photo */
         .flip-container {
             perspective: 1000px;
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 20px auto;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px auto;
         }
+
         .flipper {
             position: relative;
             width: 100%;
             height: 100%;
-            transition: transform 0.6s;
+            transition: transform 0.8s;
             transform-style: preserve-3d;
         }
-        .flip-container.hover .flipper {
+
+        .flip-container:hover .flipper {
             transform: rotateY(180deg);
         }
+
         .front, .back {
             position: absolute;
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
             border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .front {
-            background-image: url(https://s.gravatar.com/avatar/f16b71baaad2a57e4195336eae2b4c49?s=130);
+            background-image: url('https://s.gravatar.com/avatar/f16b71baaad2a57e4195336eae2b4c49?s=150');
             background-size: cover;
             background-position: center;
-            background-color: #fff;
+            border: 4px solid #e67e22;
         }
+
         .back {
-            background-color: #3498db;
-            color: #fff;
+            background-color: #2ecc71;
+            color: #1e1e1e;
             transform: rotateY(180deg);
             flex-direction: column;
-            padding: 10px;
+            padding: 15px;
             font-size: 0.9em;
             text-align: center;
+            border: 4px solid #2ecc71;
         }
-        .back em a {
-            color: #fff;
+
+        .back a {
+            color: #1e1e1e;
+            font-weight: bold;
             text-decoration: none;
+        }
+
+        /* Skills List */
+        .skills {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills li {
+            background: rgba(255, 255, 255, 0.1);
+            color: #f1f1f1;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .skills li:hover {
+            background: #e67e22;
+        }
+
+        /* Project Details */
+        .projects p {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 3px solid #2ecc71;
+        }
+
+        .projects p span {
+            display: inline-block;
+            margin-right: 25px;
+            font-weight: bold;
+            color: #bdc3c7;
+        }
+        .projects p div {
+            margin-top: 15px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        /* Table */
+        .table {
+            background-color: transparent;
+            color: #f1f1f1;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .table thead tr {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .table-striped > tbody > tr:nth-of-type(odd) {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        .table-bordered > thead > tr > th, .table-bordered > tbody > tr > td {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .table-hover > tbody > tr:hover {
+            background-color: rgba(255, 255, 255, 0.08);
         }
 
         /* Social Icons */
         .socialIconBig li {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 15px;
         }
         .socialIconBig img {
-            width: 24px;
-            height: 24px;
+            width: 32px;
+            height: 32px;
+            filter: grayscale(100%) invert(100%);
+            transition: filter 0.3s;
         }
-        
-        /* Skills List */
-        .skills {
-            padding-left: 0;
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
+        .socialIconBig img:hover {
+            filter: grayscale(0%) invert(0%);
         }
 
-        .skills li {
-            background-color: #ecf0f1;
-            color: #555;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-
-        /* Project Details */
-        .projects p span {
-            display: inline-block;
-            margin-right: 20px;
-            font-weight: bold;
-        }
-
-        .projects p div {
-            margin-top: 10px;
-            font-style: italic;
-            color: #666;
-        }
-        
-        /* Table Styles */
-        .table-responsive {
-            margin-top: 15px;
-        }
-        .table {
-            background-color: #fdfdfd;
-        }
-        .table thead tr {
-            background-color: #eee;
-        }
-
-        /* Media Queries for Responsiveness */
         @media (max-width: 991px) {
-            .sidebar-content {
+            .sidebar {
                 border-right: none;
                 text-align: center;
             }
-            .main-content {
-                padding: 0 15px;
-            }
-            .main-heading {
-                text-align: center;
-                font-size: 2.5em;
-            }
-            .pull-right {
-                float: none !important;
-                display: block;
-                text-align: center;
-                margin-top: 10px;
+            .flip-container {
+                margin-top: 20px;
             }
         }
     </style>
@@ -214,45 +211,41 @@
 <body>
     <div id="resumecontainer" class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="sidebar-content" data-offset-top="50" data-spy="affix">
-                    <div class="flip-container vertical" onclick="this.classList.toggle('hover');">
-                        <div class="flipper">
-                            <div class="front" style="background-image: url('https://s.gravatar.com/avatar/f16b71baaad2a57e4195336eae2b4c49?s=130');"></div>
-                            <div class="back">
-                                <em class="text-color"><a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a></em>
-                                <br>
-                                <em class="text-color">Full Stack Developer</em>
-                            </div>
+            <div class="col-sm-3 sidebar">
+                <div class="flip-container vertical">
+                    <div class="flipper">
+                        <div class="front"></div>
+                        <div class="back">
+                            <a href="mailto:ssasidaran86@gmail.com">ssasidaran86@gmail.com</a>
+                            <br>
+                            <em>Full Stack Developer</em>
                         </div>
                     </div>
-
-                    <div class="contact_container">
-                        <span class="highlights"><em>Contact</em></span>
-                        <p><strong>Ph:</strong> +91 9994274156</p>
-                        <p><strong>Mo:</strong> +61 431812347</p>
-                    </div>
-
-                    <div class="skill_container">
-                        <span class="highlights"><em>Skills</em></span>
-                        <ul class="list-unstyled skills">
-                            <li>Ruby on Rails</li>
-                            <li>Golang</li>
-                            <li>Python</li>
-                            <li>Pyspark</li>
-                            <li>Azure Synapse, Azure Stack</li>
-                            <li>Terraform, Ansible</li>
-                            <li>AWS Architect</li>
-                            <li>Postgres, MySQL, Oracle</li>
-                            <li>Stored Procedures</li>
-                            <li>Sunspost Solr, Redis, Memcached</li>
-                            <li>GIT, CVS, SVN</li>
-                            <li>AWS, RHEL, Ubuntu servers</li>
-                            <li>HAPROXY</li>
-                            <li>Sublime, Aptana, VSCode</li>
-                            <li>HTML, CSS, Twitter bootstrap</li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="contact_container text-center">
+                    <span class="highlights"><em>Contact</em></span>
+                    <p>Ph: +91 9994274156</p>
+                    <p>Mo: +61 431812347</p>
+                </div>
+                <div class="skill_container">
+                    <span class="highlights"><em>Skills</em></span>
+                    <ul class="list-unstyled skills">
+                        <li>Ruby on Rails</li>
+                        <li>Golang</li>
+                        <li>Python</li>
+                        <li>Pyspark</li>
+                        <li>Azure Synapse, Azure Stack</li>
+                        <li>Terraform, Ansible</li>
+                        <li>AWS Architect</li>
+                        <li>Postgres, MySQL, Oracle</li>
+                        <li>Stored Procedures</li>
+                        <li>Sunspost Solr, Redis, Memcached</li>
+                        <li>GIT, CVS, SVN</li>
+                        <li>AWS, RHEL, Ubuntu servers</li>
+                        <li>HAPROXY</li>
+                        <li>Sublime, Aptana, VSCode</li>
+                        <li>HTML, CSS, Twitter bootstrap</li>
+                    </ul>
                 </div>
             </div>
 
@@ -269,14 +262,18 @@
                 <div class="profile">
                     <span class="highlights"><em>Profile</em></span>
                     <p>
-                        15+ years of experience in the software development life cycle (SDLC), including requirements gathering, analysis, design, development, testing, and creation of Linux Server environments. I specialize in **Ruby on Rails (RoR)**, developing an Enterprise 2.0 collaborating platform for internal TCS that applies Web 2.0 concepts and social networking within the enterprise.
+                        15+ yrs of Experience in software development life cycle (SDLC) experience including requirement
+                        gathering, analysis, design, development, testing and Creation of Linux Server environment for
+                        application. I am working on Ruby on Rails (RoR) to develop an Enterprise 2.0 collaborating platform
+                        for internal TCS. The platform deals with the concept of “Applying Web2.0 concepts and Social
+                        Networking” within the enterprise.
                     </p>
                 </div>
 
                 <div class="experience">
                     <span class="highlights"><em>Experience</em></span>
                     <p class="inner-heading">
-                        <em>Tata Consultancy Services || Assistant Consultant (March 2009 - Present)</em>
+                        <em>Tata Consultancy Services || Assistant consultant (25th March 2009 -Till Date)</em>
                     </p>
                 </div>
 
@@ -318,90 +315,71 @@
 
                 <div class="projects">
                     <span class="highlights"><em>Projects</em></span>
-                    <p class="inner-heading">
-                        FIRECALL (April 2016 - July 2016)
-                    </p>
+                    <p class="inner-heading">FIRECALL (April 2016 - July 2016)</p>
                     <p>
-                        <span><strong>Customer:</strong> RBC, Luxembourg</span>
-                        <span><strong>Role:</strong> Senior Technical System Analyst + Onsite Coordinator</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Oracle, CVS & SVN</span>
-                        <div>This application was built to grant access to various production database vendors (ORACLE, SQL Server, Focus, SYBASE, and Progress-based applications).</div>
+                        <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
+                        <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator</em></span>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Oracle, CVS & SVN</em></span>
+                        <div>This application was built to grant access to various production db vendors like (ORACLE, SQL server, Focus - Mainframe, SYBASE and Progress based applications)</div>
                     </p>
-                    <p class="inner-heading">
-                        SAM3 (Sep 2015 - Present)
-                    </p>
+                    <p class="inner-heading">SAM3 (Sep 2015 - Till Date)</p>
                     <p>
-                        <span><strong>Customer:</strong> RBC, Luxembourg</span>
-                        <span><strong>Role:</strong> Senior Technical System Analyst + Onsite Coordinator</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Oracle, CVS & SVN</span>
-                        <div>This project is an application where employees can raise requests to gain access to specific software/applications.</div>
+                        <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
+                        <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator</em></span>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Oracle, CVS & SVN</em></span>
+                        <div>This project is to develop an application where the employees can raise request to gain access to specific softwares / applications</div>
                     </p>
-                    <p class="inner-heading">
-                        Migration of RBC Rails application to Latest version (Sep 2015 - Present)
-                    </p>
+                    <p class="inner-heading">Migration of RBC Rails application to Latest version (Sep 2015 - Till Date)</p>
                     <p>
-                        <span><strong>Customer:</strong> RBC, Luxembourg</span>
-                        <span><strong>Role:</strong> Senior Technical System Analyst + Onsite Coordinator</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Oracle, CVS & SVN</span>
-                        <div>This project involved migrating all Rails applications developed in Rails 1, 2, and 3 to the latest version. A Rails 4 template application was developed to help with this migration.</div>
+                        <span><strong>Customer:</strong> <em>RBC, Luxembourg</em></span>
+                        <span><strong>Role:</strong> <em>Senior Technical system analyst + Onsite co-ordinator</em></span>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Oracle, CVS & SVN</em></span>
+                        <div>This project is to migrate all rails application which are being developed in Rails 1, 2 and 3 to Latest version. Developed a Rails 4 template application, with the help of this application migrated all the okd version application.</div>
                     </p>
-                    <p class="inner-heading">
-                        Knome (Nov 2012 - Sep 2015)
-                    </p>
+                    <p class="inner-heading">Knome (Nov 2012 - Sep 2015)</p>
                     <p>
                         <span><strong>Role:</strong> Senior Developer</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</span>
-                        <div>This responsive application allows employees to use social networking concepts within the enterprise. It can be viewed on mobile devices, iPads, and desktops, and includes many key social elements.</div>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
+                        <div>This project is to develop an application where the employees can use the social networking concepts within the enterprise. Knome is a resposive app which can be viewed in any devises like mobile, iPAD and desktops. Many key social elements are added this platform.</div>
                     </p>
-                    <p class="inner-heading">
-                        Bay (Feb 2015 - Apr 2015)
-                    </p>
+                    <p class="inner-heading">Bay (Feb 2015 - Apr 2015)</p>
                     <p>
-                        <span><strong>Customer:</strong> SIAM Bank, Thailand</span>
+                        <span><strong>Customer:</strong> <em>SIAM Bank, Thailand</em></span>
                         <span><strong>Role:</strong> Senior Developer</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</span>
-                        <div>Customized the Knome platform solution for SIAM bank's specific requirements and deployed the application on AWS, handling all AWS configurations.</div>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
+                        <div>Knome platform solution was customized for SIAM bank specific requirements and helped in customzing the solution and deployed the application in AWS. Did the full AWS configuration.</div>
                     </p>
-                    <p class="inner-heading">
-                        Elpatio (Feb 2013 - Dec 2013)
-                    </p>
+                    <p class="inner-heading">Elpatio (Feb 2013 - Dec 2013)</p>
                     <p>
-                        <span><strong>Customer:</strong> ING Bank, Spain</span>
+                        <span><strong>Customer:</strong> <em>ING Bank, Spain</em></span>
                         <span><strong>Role:</strong> Developer</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</span>
-                        <div>Customized the Knome platform solution for ING bank's specific requirements.</div>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma</em></span>
+                        <div>Knome platformm solution was customized for ING bank specific requirements and helped in customzing the solution.</div>
                     </p>
-                    <p class="inner-heading">
-                        MIX (Feb 2013 - May 2013)
-                    </p>
+                    <p class="inner-heading">MIX (Feb 2013 - May 2013)</p>
                     <p>
-                        <span><strong>Customer:</strong> WESTPAC bank, Australia</span>
-                        <span><strong>Role:</strong> Developer + Onsite Coordinator</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, Bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma, AWS</span>
-                        <div>Customized the Knome platform solution for Westpac bank's specific requirements and maintained the application deployed on AWS.</div>
+                        <span><strong>Customer:</strong> <em>WESTPAC bank, Australia</em></span>
+                        <span><strong>Role:</strong> Developer + Onsite co-ordinator</span>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, bootstrap, Postgres, Solr, Redis, Memcached, GIT, Passenger, Nginx, Thin, Puma, AWS</em></span>
+                        <div>Knome platformm solution was customized for Westpac bank specific requirements and helped in customzing the solution. Was maintaining the application deployed in AWS.</div>
                     </p>
-                    <p class="inner-heading">
-                        Ideamax (Mar 2010 - Nov 2012)
-                    </p>
+                    <p class="inner-heading">Ideamax (Mar 2010 - Nov 2012)</p>
                     <p>
                         <span><strong>Role:</strong> Developer + Server Administrator Lead</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, jQuery, MySQL, Passenger, Apache, AWS</span>
-                        <div>Ideamax is an innovation and collaboration hub for TCS where employees can network, collaborate, share, and implement innovative ideas swiftly.</div>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, jquery, Mysql, Passenger, Apache, AWS</em></span>
+                        <div>Ideamax is innovation and collaboration hub for TCS where employees could network, collaborate, share and implement innovative ideas swiftly. It facilitates comprehensive lifecycle</div>
                     </p>
-                    <p class="inner-heading">
-                        Tata Innoverse (Oct 2009 - Mar 2010)
-                    </p>
+                    <p class="inner-heading">Tata Innoverse (Oct 2009 - Mar 2010)</p>
                     <p>
-                        <span><strong>Customer:</strong> Tata Quality Management System</span>
+                        <span><strong>Customer:</strong> <em>Tata Quality Management System</em></span>
                         <span><strong>Role:</strong> Developer</span>
-                        <span><strong>Tech Spec:</strong> Ruby on Rails, MySQL, Passenger, Apache, AWS</span>
-                        <div>'Tata Innoverse' is the innovation hub for all Tata companies, facilitating networking, collaboration, and sharing of innovative ideas.</div>
+                        <span><strong>Tech Spec:</strong> <em>Ruby on Rails, Mysql, Passenger, Apache, AWS</em></span>
+                        <div>'Tata Innoverse' is the innovation hub for all Tata companies where employees can network, collaborate, share, remix, predict and implement innovative ideas swiftly.</div>
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
